@@ -36,8 +36,8 @@ const LOG_FILE = "log.json";
 const userMessages = {};
 const DEFAULT_VIDEO = path.join(__dirname, "pagi.mp4");
 const FILE_SCHEDULE = path.join(__dirname, "schedule.json"); // ✅ Tambahkan ini
-const caption = "SeLaMat PaGi TemAn TemAn Qu";
-const gclog = "-1002549314973";
+const caption = "Toko RootSec Bot";
+const gclog = "-1002599718281";
 const ADMIN_ID = "6415843289";
 const ADMIN_IDS = "6415843289";
 const TELEGRAM_USER_ID = 6415843289;
@@ -3416,7 +3416,7 @@ bot.on("callback_query", async (callbackQuery) => {
     const data = callbackQuery.data;
 
     // Pastikan tombol memiliki prefix "tks_"
-    if (!data.startsWith("tks_")) return;
+    if (!data.sWith("tks_")) return;
 
     const style = data.replace("tks_", ""); // Ambil nama gaya
     if (!userSessions[chatId] || !userSessions[chatId].text) return;
@@ -5142,14 +5142,14 @@ bot.onText(/^\/brat(?:\s(.+))?/, async (msg, match) => {
 bot.onText(/\/start/, (msg) => {
     const chatId = msg.chat.id;
     if (!users[chatId]) {
-        bot.sendMessage(chatId, "🔐 Anda belum punya akun! Gunakan `/register`.");
+        bot.sendMessage(chatId, "🔐 Silakan Daftarkan Dirimu Untuk Mendapatkan Akses Dibot Pencet `/register`.");
         return;
     }
-    bot.sendMessage(chatId, "✅ Selamat datang kembali!");
+    bot.sendMessage(chatId, "✅ Selamat Anda Mendapatkan Akses Ke dalam Bot");
 });
 
 // 🔹 Handle /register
-const OWNER_ID = "6202819748"; // Ganti dengan ID Telegram Pengembang (Admin Utama)
+const OWNER_ID = "6415843289"; // Ganti dengan ID Telegram Pengembang (Admin Utama)
 
 bot.onText(/\/kbbi/, async (msg) => {
     const chatId = msg.chat.id;
